@@ -12,7 +12,7 @@ class CartPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: Consumer<CartModel>(
         builder: (context, value, child) {
@@ -20,7 +20,7 @@ class CartPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Text(
                   'My Cart',
                   style: GoogleFonts.notoSerif(
@@ -33,7 +33,7 @@ class CartPage extends StatelessWidget {
               Expanded(
                   child: ListView.builder(
                     itemCount: value.cartItems.length,
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.all(12.0),

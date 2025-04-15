@@ -31,8 +31,8 @@ class IntroPage extends StatelessWidget {
 
           const SizedBox(height: 24,),
 
-          // fresh items everday
-          Text('Fresh items everday',
+          // fresh items everyday
+          Text('Fresh items everyday',
           style: TextStyle(
             color: Colors.grey[600],
           ),
@@ -42,7 +42,7 @@ class IntroPage extends StatelessWidget {
           //get started button
           GestureDetector(
             onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(
-                builder: (context){return HomePage();
+                builder: (context){return const HomePage();
                 },
             )),
             child: Container(

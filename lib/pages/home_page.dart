@@ -13,29 +13,29 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return CartPage();
+            return const CartPage();
               },
             ),
           ),
         backgroundColor: Colors.black,
-        child: Icon(Icons.shopping_bag, color: Colors.white,),
+        child: const Icon(Icons.shopping_bag, color: Colors.white,),
       ),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-             SizedBox(height: 48,),
+             const SizedBox(height: 48,),
             // good moring
-            Padding(
+            const Padding(
               padding:  EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text('Good Moring',),
+              child: Text('Good Morning',),
             ),
 
-            SizedBox(height: 4,),
+            const SizedBox(height: 4,),
 
             // order fresh items
             Padding(
-              padding:  EdgeInsets.symmetric(horizontal: 24.0),
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: Text('Let order fresh items for you',
               style: GoogleFonts.notoSerif(
                 fontSize: 36,
@@ -43,19 +43,20 @@ class HomePage extends StatelessWidget {
               ),
               ),
             ),
-            SizedBox(height: 24,),
+            const SizedBox(height: 24,),
 
             // divider
-            Padding(
+            const Padding(
               padding:  EdgeInsets.symmetric(horizontal: 8.0),
               child: Divider(),
             ),
-            SizedBox(height: 24,),
+            const SizedBox(height: 24,),
 
             // fresh items + grid
-            Padding(
+            const Padding(
               padding:  EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text('Fresh Items',
+              child: Text(
+                'Fresh Items',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -65,9 +66,9 @@ class HomePage extends StatelessWidget {
                 child: Consumer<CartModel>(builder: (context, value, child) {
                   return GridView.builder(
                     itemCount: value.shopItems.length,
-                    padding: EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(12),
                     gridDelegate:
-                    SliverGridDelegateWithFixedCrossAxisCount(
+                    const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         childAspectRatio: 1 / 1.3,
                     ),
