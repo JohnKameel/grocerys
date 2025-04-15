@@ -1,16 +1,20 @@
-# grocery_shop
+Grocery Shop Mobile App
 
-A new Flutter project.
+📌 Overview
 
-## Getting Started
+Grocery Shop Mobile App is a simple and efficient mobile application designed for small grocery stores. It allow customers to browse and order groceries conveniently.
 
-This project is a starting point for a Flutter application.
+🎯 Features
 
-A few resources to get you started if this is your first Flutter project:
+🛒 Product Listing – View available grocery items with prices and images.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🛍 Cart Management – Add/remove products and manage the shopping cart.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+💳 Order & Checkout – Place orders and select payment options.
+
+
+📩 Contact
+
+For any inquiries or support, please reach out to jookameel10@gmail.com or open an issue in the repository.
+
+Happy Coding! 🚀
